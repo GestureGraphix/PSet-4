@@ -28,7 +28,12 @@ by expressing $S_{n}$ as a telescoping sum. If it is convergent find its sum
 
 \sol{
     \begin{center}
-        \[ S_{n} =  \ln\left(\frac{1}{1+1}\right) +  \ln\left(\frac{2}{2+1}\right)\] 
+        \[ \sum_{n=1}^{\infty} \ln\left(\frac{n}{n+1}\right) = \sum_{n=1}^{\infty} \ln(n)-\ln(n+1)\]
+        \[ S_{n} =  \left(\ln(1) - \ln(1 + 1)\right) + \left(\ln(2) - \ln(1 + 2)\right) + \ldots + \left(\ln(n) - \ln(n + 1)\right) \] 
+        \[ S_{n} =  \left(\ln(1) - \ln(2)\right) + \left(\ln(2) - \ln(3)\right) + \ldots + \left(\ln(n) - \ln(n + 1)\right) \] 
+        \[ S_{n} = \left(\ln(1) - \ln(n+1)\right)\] 
+        \[ \lim_{n \to \infty} S_{n} = \lim_{n \to \infty} \left(\ln(1) - \ln(n+1)\right) = - \infty \]
+        \[ \text{diverges}\]  
     \end{center}
 }
 
@@ -39,6 +44,31 @@ series? \\
 (b). $\sum_{n=500}^{\infty}(\cos(1)^{n})$ \\
 (c). $\sum_{n=500}^{\infty} \cos(n)$ \\
 (d). $\sum_{k=2}^{{\infty}} \frac{2^{k}+1}{3^{k}+1}$}
+
+\sol{
+    (a).
+    \begin{center}
+        \[ \lim_{n \to \infty} \frac{1}{n^{n}} = 0\] 
+    \end{center}
+    The Test for Divergence is inconclusive here. This test alone does not tell us whether the series 
+    converges or diverges. We would need to use another test to determine convergence or divergence
+    (b)
+    \begin{center}
+        \[ \lim_{n \to \infty} \cos(1)^{n} = 0\] 
+    \end{center}
+    the Test for Divergence is again inconclusive. However, since $\cos(1) < 1$, this series is a geometric series with a ratio less than 1, which converges.\\
+    (c)
+    \begin{center}
+        \[ \lim_{n \to \infty} \cos(n) \neq 0\] 
+    \end{center}
+    The cosine function oscillates between -1 and 1 and does not approach zero as nn approaches infinity. 
+    Therefore,$\lim_{n \to \infty}$ does not exist. Since the limit of $\cos(n)$ does not approach zero, the Test for Divergence tells us that the series \\
+    (d)
+    \begin{center}
+        \[ \lim_{n \to \infty} \frac{2^k + 1}{3^k + 1} = 0\] 
+    \end{center}
+    Since $\lim_{n \to \infty} \frac{2^k + 1}{3^k + 1} = 0$,  the Test for Divergence is inconclusive here. This test alone does not tell us whether the series converges or diverges
+}
 
 \section{Problem 3}
 \qs{}{Consider the Alternating Harmonic Series $1 - \frac{1}{2} + \frac{1}{3} - \frac{1}{4} + \ldots $, 
@@ -61,11 +91,32 @@ converge to the same number. Hint: What is $\lim_{n \to \infty}\left(s_{2n + 1} 
         \[ \sum_{k=3}^{\infty} \frac{2+(-1)^{k}}{k}\] 
     \end{center}
 converges or diverges. Explain your reasoning. (In particular, explain why it is valid to use comparison
-and what you are comparing to.)}
+and what you are comparing to).}
+
+\sol{
+    \begin{center}
+        \[ \frac{1}{k} \leq \frac{2 + (-1)^{k}}{k} \leq \frac{3}{k}\] 
+        \[ a_{k} = \frac{1}{k} \]
+        \[ b_{k} = \frac{2 + (-1)^{k}}{k} \]  
+        \[ \sum_{n=3}^{\infty} \frac{1}{k} \text{ diverges}\] 
+    \end{center}
+    Since the series is always greater that or equal to the harmonic series, which diverges, it can be said that 
+    this series also diverges using the comparison test. $a_{k} \leq b_{k}$ and it diverges so $b_k$ diverges as well. 
+}
 
 \section{Problem 5}
 \qs{}{A ball is dropped out of a window from a height of 100 feet. Assume that each time the ball falls from
-a height $h$that it rebounds to 30$\text{\%}$ of height $h$. Assuming the ball bounces indefinitely, determine the
+a height $h$ that it rebounds to 30$\text{\% }$ of height $h$. Assuming the ball bounces indefinitely, determine the
 total distance it travels.}
+
+\sol{
+    \begin{center}
+        \[ \sum_{n = 0}^{\infty} (100)(0.3^{n}) \]  
+        \[ \sum_{n= 0}^{\infty} ar^{n} = \frac{a}{1-r}\]
+        \[ a = 100\]
+        \[ r = 0.3\]
+        \[ \frac{100}{1 - 0.3} = \frac{1000}{7} \approx 142.857 \text{ feet} \]   
+    \end{center}
+}
 
 \end{document}
