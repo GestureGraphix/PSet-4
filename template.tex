@@ -101,7 +101,7 @@ converge to the same number. Hint: What is $\lim_{n \to \infty}\left(s_{2n + 1} 
     \begin{center}
         \[ S_{2n} < S_{2n + 2} \] 
         \[ a_{2n} < 0 \]
-        \[ |a_{2n}| > |a_{2n + 2}\]
+        \[ |a_{2n}| > |a_{2n + 2}|\]
         \[ a_{2n + 1} + a_{2n + 2} > 0 \]
         \[ S_{2n + 2} = S_{2n} + a_{2n + 1} + a_{2n + 2}\]
         \[ S_{2n}  > S_{2n} + a_{2n + 1} + a_{2n + 2} \]   
@@ -112,7 +112,7 @@ converge to the same number. Hint: What is $\lim_{n \to \infty}\left(s_{2n + 1} 
         \[ S_{1} = 1\]
         \[ S_{2} = \frac{1}{2}\]
         \[ S_{2} \leq S_{n} \leq S_{1}\]
-        \[ 1 - frac{1}{2} + \frac{1}{3} - \frac{1}{4} \ldots \frac{1}{n}\]
+        \[ 1 - \frac{1}{2} + \frac{1}{3} - \frac{1}{4} \ldots \frac{1}{n}\]
         \[ |S_{1} - S_{2}| = \frac{1}{2} \]
         \[ |S_{2} - S_{3}| =  \frac{1}{3}\]
         \[ |S_{n} - S_{n+1}| = \frac{1}{n+1}\]    
@@ -124,7 +124,7 @@ converge to the same number. Hint: What is $\lim_{n \to \infty}\left(s_{2n + 1} 
      $m \space \in \space \mathbb{Z}$. $S_{n}$ will never pass the lower bounds upper bounds 
     (e). 
     \begin{center}
-        \[ \lim_{n \to \infty} \left(s_{2n + 1} - s_{2n} \right) = lim_{n \to \infty} \frac{1}{n+1} = 0\]
+        \[ \lim_{n \to \infty} \left(s_{2n + 1} - s_{2n} \right) = \lim_{n \to \infty} \frac{1}{n+1} = 0\]
         \[ \forall n \in \mathbb{Z} \space s_{2n+1} > S_{2n}\]
         \[ s_{2n} = \text{ event sum}\]
         \[ s_{2n +1} = \text{ odd sum}\]
@@ -163,11 +163,11 @@ total distance it travels.}
 
 \sol{
     \begin{center}
-        \[ \sum_{n = 1}^{\infty} (200)(0.3^{n}) \]  
-        \[ \sum_{n= 1}^{\infty} ar^{n} = \frac{a}{1-r}\]
-        \[ a = 100\]
+        \[ 100 + \sum_{n = 1}^{\infty} (200)(0.3^{n}) \]  
+        \[ \sum_{n= 1}^{\infty} ar^{n} = \frac{200}{1-r}\]
+        \[ a = (200)(0.3)^{1} = 60\]
         \[ r = 0.3\]
-        \[ \frac{100}{1 - 0.3} = \frac{1000}{7} \approx 142.857 \text{ feet} \]   
+        \[ 100+ \frac{200}{1 - 0.3} = 100 + \frac{600}{7} \approx 185.714 \text{ feet} \]   
     \end{center}
 }
 
