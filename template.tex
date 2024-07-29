@@ -75,7 +75,7 @@ series? \\
 which can be written in summation notation as $\sum_{k=1}^{\infty} \frac{(-1)^{k+1}}{k}$ \\
 (a). Plot the partial sums $s_{n} = \sum_{k=1}^{\infty} \frac{(-1)^{k+1}}{k}$ versus n for $n = 1, 2, \ldots , 8$ \\ 
 (b). Explain why $S_{1}>S_{3} > S_{5} > \ldots $, ie., why the odd partial sums are decreasing. \\
-(c). Explain why $S_{2}<S_{4} < S_{6} > \ldots $, i.e., why the even partial sums are increasing. \\
+(c). Explain why $S_{2}<S_{4} < S_{6} < \ldots $, i.e., why the even partial sums are increasing. \\
 (d). Explain why $\frac{1}{2} \leq s_{n} \leq 1$ for all $n$. \\
 (e).  The Monotonic Convergence Theorem states that any increasing sequence that is bounded above
 must converge, as must any decreasing sequence that is bounded below. Since the odd partial
@@ -83,6 +83,35 @@ sums of the Alternating Harmonic Series are decreasing and bounded below by $\fr
 the odd partial sums converge. Since the even partial sums are increasing and bounded above by 1, the even
 partial sums also converge. Explain why the odd partial sums and the even partial sums must
 converge to the same number. Hint: What is $\lim_{n \to \infty}\left(s_{2n + 1} -s_{2n}\right)$
+}
+
+\sol{
+    \begin{center}
+        \[ (-1)^{2n+1} = -1\]
+        \[ (-1)^{2n} = 1 \]
+        \[ a_{2n} < 0 \]
+        \[ a_{2n + 1} > 0 \]
+        \[ a_{k} > |a_{k+1}| \]
+        \[ S_{2n + 3} = S_{2n + 1} + a_{2n + 2} + a_{2n + 3} \]
+        \[ S_{2n + 1} > S_{2n + 1} + a_{2n + 2} + a_{2n + 3} \]
+        \[ S_{2n + 1} > S_{2n + 3} \]      
+
+    \end{center}
+    (c) 
+    \begin{center}
+        \[ S_{2n} < S_{2n + 2} \] 
+        \[ a_{2n} < 0 \]
+        \[ |a_{2n}| > |a_{2n + 2}\]
+        \[ a_{2n + 1} + a_{2n + 2} > 0 \]
+        \[ S_{2n + 2} = S_{2n} + a_{2n + 1} + a_{2n + 2}\]
+        \[ S_{2n}  > S_{2n} + a_{2n + 1} + a_{2n + 2} \]   
+        \[ S_{2n} > S_{2n + 2}\]  
+    \end{center}
+    (d)
+    \begin{center}
+        
+    \end{center}
+
 }
 
 \section{Problem 4}
