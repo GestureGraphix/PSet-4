@@ -1,0 +1,71 @@
+\documentclass{report}
+
+\input{preamble}
+\input{macros}
+\input{letterfonts}
+
+\title{\Huge{Math 115 QR}}
+\author{\huge{Alex Hernandez Juarez}}
+\date{July 29, 2024}
+
+\begin{document}
+
+\maketitle
+\newpage% or \cleardoublepage
+% \pdfbookmark[<level>]{<title>}{<dest>}
+\pdfbookmark[section]{\contentsname}{toc}
+\tableofcontents
+\pagebreak
+
+\chapter{}
+\section{Problem 1: Stewart 11.2.20}
+\qs{}{Determine whether the series is convergent or divergent
+by expressing $S_{n}$ as a telescoping sum. If it is convergent find its sum
+    \begin{center}
+        \[ \sum_{n=1}^{\infty} \ln\left(\frac{n}{n+1}\right)\] 
+    \end{center}
+}
+
+\sol{
+    \begin{center}
+        \[ S_{n} =  \ln\left(\frac{1}{1+1}\right) +  \ln\left(\frac{2}{2+1}\right)\] 
+    \end{center}
+}
+
+\section{Problem 2}
+\qs{}{What does the Test for Divergence tell you about convergence or divergence of each of the following
+series? \\
+(a). $\sum_{n=30}^{\infty} \frac{1}{n^{n}}$ \\
+(b). $\sum_{n=500}^{\infty}(\cos(1)^{n})$ \\
+(c). $\sum_{n=500}^{\infty} \cos(n)$ \\
+(d). $\sum_{k=2}^{{\infty}} \frac{2^{k}+1}{3^{k}+1}$}
+
+\section{Problem 3}
+\qs{}{Consider the Alternating Harmonic Series $1 - \frac{1}{2} + \frac{1}{3} - \frac{1}{4} + \ldots $, 
+which can be written in summation notation as $\sum_{k=1}^{\infty} \frac{(-1)^{k+1}}{k}$ \\
+(a). Plot the partial sums $s_{n} = \sum_{k=1}^{\infty} \frac{(-1)^{k+1}}{k}$ versus n for $n = 1, 2, \ldots , 8$ \\ 
+(b). Explain why $S_{1}>S_{3} > S_{5} > \ldots $, ie., why the odd partial sums are decreasing. \\
+(c). Explain why $S_{2}<S_{4} < S_{6} > \ldots $, i.e., why the even partial sums are increasing. \\
+(d). Explain why $\frac{1}{2} \leq s_{n} \leq 1$ for all $n$. \\
+(e).  The Monotonic Convergence Theorem states that any increasing sequence that is bounded above
+must converge, as must any decreasing sequence that is bounded below. Since the odd partial
+sums of the Alternating Harmonic Series are decreasing and bounded below by $\frac{1}{2}$ 
+the odd partial sums converge. Since the even partial sums are increasing and bounded above by 1, the even
+partial sums also converge. Explain why the odd partial sums and the even partial sums must
+converge to the same number. Hint: What is $\lim_{n \to \infty}\left(s_{2n + 1} -s_{2n}\right)$
+}
+
+\section{Problem 4}
+\qs{}{Use the Comparison Test to decide whether the series 
+    \begin{center} 
+        \[ \sum_{k=3}^{\infty} \frac{2+(-1)^{k}}{k}\] 
+    \end{center}
+converges or diverges. Explain your reasoning. (In particular, explain why it is valid to use comparison
+and what you are comparing to.)}
+
+\section{Problem 5}
+\qs{}{A ball is dropped out of a window from a height of 100 feet. Assume that each time the ball falls from
+a height $h$that it rebounds to 30$\text{\%}$ of height $h$. Assuming the ball bounces indefinitely, determine the
+total distance it travels.}
+
+\end{document}
